@@ -6,7 +6,7 @@ const contextReducer = (state, action) => {
             transactions = state.filter((transaction) => transaction.id !== action.payload);
             return transactions;
         case 'CREATE_TRANSACTION':
-            transactions = [action.payload, ... state];
+            transactions = [action.payload, ...state];
             return transactions;
         default:
             break;
